@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio de Jalal</title>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="./styles.css">
+
+	<link href="./logo.png" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		
+		<nav class="nav container void-background">
+			<img src="./logo.png" id="logo1">
+			
+
+			<div class="nav-right nav-menu">
+				<a class="nav-item" href="#about">A propos de moi</a>
+				<a class="nav-item" href="#projects">Mes projets</a>
+				<a class="nav-item" href="#social">Mes réseaux</a>
+				<a target="_blank" class="nav-item" href="./2eme.html">Ma Formation & Experiences</a>
+				<a class="nav-item" href="#contact">Me contacter</a>
+			</div>
+		</nav>
+				
+		
+		<section id="about" class="section section-1">
+			<div class="container has-text-centered">
+				<img class="avatar" src="jalal.png">
+			</div>
+			<div class="container"></br>
+				<p class="intro" id="intro1"></p>
+			</div>
+		</section>
+		
+		
+		<section  id="projects" class="section section-2">
+			<div class="container">
+				<div class="has-text-centered">
+					<h3 class="title is-3">Mes projets</h3>
+				</div>
+				
+				<div class="columns is-multiline is-desktop">
+					<!-- Projet 1 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="./project-1.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										<b><i>L'EAU DANS L'ESPACE : </i></b>
+										C'est un projet TIPE qui traite e le probléme du manque d'eau dans les stations spatiales dont
+										la consomation quotidienne se limite a 3,5 litres par jours. Le projet  s'interesse donc a un mechanisme de
+										traitement de l'eau qui peut rendre la sueur et l'urine une eau potable pour assurer les besoins des
+										astraunotes .
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Projet 2 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="./project-2.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										<b><i>CAO manège : </i></b>
+										C'est un proget mécanique réalisée par "onshape" faisant la concéption mécanique d'un manége.
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<!-- Projet 3 -->
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="./project-1.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<p>
+										<b><i>Détecteur de fumée : </i></b>
+										Le projet est basé sur la réalisation d'un montage électique suivie d'un schéma éléctronique fait par la CAO électronique sur (NI multisim).
+									</p>
+								</div>
+							</article>
+						</div>
+					</div>
+					<div class="column">
+						<div class="box project-text">
+							<article>
+								<div>
+									<figure class="image project-figure">
+										<img src="./project-2.jpg" alt="Image">
+									</figure>
+								</div>
+								<div>			
+									<b><i>Projet genie informatique : </i></b> C'est un proget scolaire à contexte de réaliser un programme en language C, tout en creant plusieurs fonction ( colorer des images, fonctions effet miroire, min compenent, max compenent, min et max pixel, dimension ...).
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+		<section id="social" class="section section-3">
+			<div class="container">
+				<div class="has-text-centered">					
+					<h3 class="title is-3">Mes réseaux </h3>
+				</div>
+				<div class="social-container columns">
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="https://www.linkedin.com/in/jalal-mahjoub-27767a17a/"><img class="" src="linkedin.png"></a>
+					</div>
+					<div class="column is-6 has-text-centered">
+						<a target="_blank" href="#"><img class="" src="facebook.png"></a>
+					</div>
+				</div>
+			</div>
+		</section>	
+
+		
+<form class="cf" >
+	<h1 style="font-family: 'Courier New', Courier, monospace";>Me contacter</h1>
+  <div class="half left cf" id="contact">
+    <input type="text" id="input-name" placeholder="Nom" required  style="font-family: 'Courier New', Courier, monospace"; class="nom">
+    <input type="email" id="input-email" placeholder="Email" required  style="font-family: 'Courier New', Courier, monospace"; name="email" class="email"> 
+  </div>
+  <div class="half right cf">
+    <textarea name="message" type="text" id="input-message" placeholder="Votre message" required  style="font-family: 'Courier New', Courier, monospace"; name="message"></textarea>
+  </div>  
+  <input type="submit" value="Submit" id="input-submit"  style="font-family: 'Courier New', Courier, monospace"; >
+</form>
+		  </div>
+			<a href="./MAhjoub jalal.pdf"  download="MAhjoub jalal.pdf" target="_blank" id="CV" >Télécharger le CV en version PDF.</a>
+			<section class="section-4 has-text-centered container">
+				<a style="color:white" >Jalal Mahjoub © copyright 2022.</a>
+				
+			</section>
+			
+
+			<button onclick="topFunction()" id="myBtn">Haut de page</button>
+		<!-- Script  -->
+		<script src="controller.js"></script>	
+	</body>	
+</html>
